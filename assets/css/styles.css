@@ -209,3 +209,9 @@ section {
     padding: 2% 0;
     align-content: center;
 }
+
+/* Sección 'Socios Comerciales' */
+.partners-img {
+    grid-column: 1/6;
+    grid-row: 1/11;
+}
