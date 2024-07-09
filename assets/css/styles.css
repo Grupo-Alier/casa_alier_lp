@@ -56,6 +56,11 @@ section {
     padding: 0;
 }
 
+.img-container img{
+    width: 100%;
+    position: center;
+}
+
 .logo-container{
     padding: 5%; 
     display: flex;
