@@ -98,7 +98,7 @@ ul{
 
 .header-bar {
     width: 100%;
-    height: 75%;
+    height: 65%;
     align-self: end;
 }
 
@@ -320,4 +320,76 @@ ul{
     grid-row: 6/11;
     width: 90%;
     justify-self: end;
+}
+
+/* Seccion 'Contacto' */
+.contact-header-bar {
+    grid-column: 1/11;
+    grid-row: 1/3;
+}
+
+.contact h3{
+    grid-column: 7/9;
+    grid-row: 3/4;
+    justify-self: center;
+}
+
+.contact-img {
+    grid-column: 1/6;
+    grid-row: 4/9;
+    width: 90%;
+}
+
+.contact-bar {
+    grid-column: 5/6;
+    grid-row: 6/11;
+    width: 90%;
+    height: 90%;
+    align-self: end;
+    justify-self: end;
+}
+
+.contact-logo {
+    grid-column: 7/9;
+    grid-row: 4/7;
+    justify-items: center;
+}
+
+.contact .direccion-container {
+    grid-column: 7/9;
+    grid-row: 7/8;
+    color: var(--letter-gray);
+}
+
+.contact .direccion-container p {
+    text-align: center;
+}
+
+.contact .contact-e {
+    grid-column: 7/9;
+    grid-row: 8/9;
+    color: var(--letter-gray);
+}
+
+.contact .nav-rs {
+    grid-column: 6/10;
+    grid-row: 8/11;
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.contact .nav-rs li{
+    flex-grow: 1;
+    flex-shrink: 4;
+}
+
+.contact .nav-rs li img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
