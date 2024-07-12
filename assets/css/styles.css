@@ -217,6 +217,10 @@ ul{
     align-content: center;
 }
 
+.about-us-img-container img{
+    object-position: bottom;
+}
+
 /* Sección 'Socios Comerciales' */
 .partners-img {
     grid-column: 1/6;
