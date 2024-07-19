@@ -8,6 +8,10 @@
     --font-bold: 'eurostile_extendedtwobold', Arial, sans-serif;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -102,7 +106,12 @@ ul{
     align-self: end;
 }
 
+.w950{
+    display: none;
+}
+
 p {
+    font-size: 1.5rem;
     text-align: justify;
 }
 
@@ -188,9 +197,9 @@ p {
 
 .about-us-logo{
     grid-column: 1/3;
-    grid-row: 1/5;
-    width: 100%;
-    height: 100%;
+    grid-row: 1/4;
+    height: 85%;
+    align-self: center;
 }
 
 .about-us h3{
@@ -211,17 +220,17 @@ p {
 .about-us p {
     grid-column: 3/9;
     grid-row: 4/7;
-    font-size: 1.4rem;
 }
 
 .about-us-img-container {
     grid-column: 1/8;
-    grid-row: 7/11;
+    grid-row: 6/11;
     padding: 2% 0;
-    align-content: center;
+    align-content: end;
 }
 
 .about-us-img-container img{
+    height: 85%;
     object-position: bottom;
 }
 
@@ -248,7 +257,6 @@ p {
     width: 80%;
     height: 80%;
     justify-self: center;
-    font-size: 1.4rem;
 }
 
 .partners-container{
@@ -313,7 +321,6 @@ p {
     grid-row: 4/7;
     width: 90%;
     justify-self: center;
-    font-size: 1.4rem;
 }
 
 .services-img-left {
@@ -347,7 +354,7 @@ p {
 }
 
 .contact h3{
-    grid-column: 7/9;
+    grid-column: 7/10;
     grid-row: 3/4;
     justify-self: center;
 }
@@ -368,13 +375,15 @@ p {
 }
 
 .contact-logo {
-    grid-column: 7/9;
-    grid-row: 4/7;
+    grid-column: 7/10;
+    grid-row: 3/7;
+    height: 85%;
+    align-self: end;
     justify-items: center;
 }
 
 .contact .direccion-container {
-    grid-column: 7/9;
+    grid-column: 7/10;
     grid-row: 7/8;
     color: var(--letter-gray);
 }
@@ -384,13 +393,14 @@ p {
 }
 
 .contact .contact-e {
-    grid-column: 7/9;
+    grid-column: 7/10;
     grid-row: 8/9;
     color: var(--letter-gray);
+    text-align: center;
 }
 
 .contact .nav-rs {
-    grid-column: 6/10;
+    grid-column: 6/11;
     grid-row: 8/11;
     width: 100%;
     height: 100%;
@@ -410,4 +420,278 @@ p {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+@media (max-width: 1250px) {
+
+    /* Generales */
+    .size-h3 {
+        font-size: 2.5rem;
+    }
+    
+    p {
+        font-size: 1.2rem;
+    }
+    
+    /* Pantalla Home */
+    .home-title {
+        font-size: 2rem;
+    }
+
+    .home-logo {
+        grid-column: 2/4;
+    }
+
+    .home-services-container {
+        width: 470px;
+        font-size: 1.2rem;
+    }
+    .home-services-container hr{
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+    /* Pantalla Nosotros */
+    .about-us-logo {
+        grid-column: 1/4;
+        grid-row: 1/4;
+        height: 85%;
+        align-self: center;
+    }
+    .about-us-img-container {
+        grid-row: 6/11;
+        align-content: end;
+    }
+    .about-us p{
+        overflow-x: scroll;
+    }
+
+    /* Pantalla Socios */
+    .partners h3{
+        grid-column: 6/11;
+        justify-self: center;
+    }
+    .partners-footer-logo {
+        height: 85%;
+        align-self: center;
+    }
+
+    /* Pantalla Servicios */
+    .services-logo {
+        grid-column: 1/4;
+        grid-row: 1/4;
+        height: 85%;
+        align-self: center;
+    }
+
+    /* Pantalla Contacto */
+    .contact-logo {
+        height: 80%;
+    }
+
+}
+
+@media (max-width: 950px) {
+    
+    /* Generales */
+    .skip {
+        display: none;
+    }
+
+    /* Pantalla Home*/
+    .home-logo {
+        grid-column: 4/8;
+        grid-row: 3/6;
+        width: 80%;
+        justify-self: center;
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 4rem;
+    }
+
+    .home-title {
+        grid-column: 2/10;
+    }
+    .home-services {
+        grid-column: 2/10;
+    }
+
+    /* Pantalla nosotros */
+    .about-us h3{
+        grid-column: 5/9 ;
+    }
+
+    .about-us p{
+        grid-row: 4/6;
+        align-self: center;
+    }
+
+    .about-us-img-container {
+        grid-column: 1/8;
+        grid-row: 5/11;
+    }
+
+    /* Pantalla Socios Comerciales */
+
+    .partners-img {
+        grid-column: 1/5;
+    }
+
+    .partners-header-bar {
+        grid-column: 5/11;
+    }
+
+    .partners-footer-bar{
+        grid-column: 5/6;
+    }
+    
+    .partners .w950{
+        grid-column: 5/11;
+        grid-row: 3/4;
+        display: block;
+        text-align: center;
+    }
+    .partners p {
+        grid-column: 5/11;
+        align-self: center;
+    }
+    .partners-container {
+        grid-column: 5/11;
+        grid-row: 5/8;
+        padding: 5%;
+    }
+
+    /* Pantalla Servicios */
+    .services h3{
+        grid-column: 6/9;
+    }
+    .services p {
+        align-self: center;
+    }
+
+    /* Pantalla Contacto */
+
+    .contact-bar {
+        grid-column: 1/2;
+    }
+
+    .contact h3 {
+        grid-column: 4/8;
+    }
+
+    .contact-logo {
+        grid-column: 3/9;
+    }
+
+    .contact .direccion-container {
+        grid-column: 3/9;
+    }
+
+    .contact .contact-e {
+        grid-column: 4/8;
+    }
+
+    .contact .nav-rs {
+        grid-column: 3/9;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+
+    /* Generales */
+    .size-h3{
+        font-size: 1.7rem;
+    }
+
+    .skip-cel{
+        display: none;
+    }
+
+    /* Pantalla Home*/
+    .home-title{
+        font-size: 1.5rem;
+    }
+
+    .home-logo {
+        grid-column: 3/9;
+    }
+
+    .home-services {
+        width: 350px;
+    }
+
+    .home-services {
+        grid-column: 1/11;
+        justify-self: center;
+        width: 350px;
+    }
+
+    .home-services-container p{
+        font-size: 1.1rem;
+    }
+
+    .home-services-container hr {
+        width: 0.4rem;
+        height: 0.4rem;
+    }
+
+    /* Pantalla Nosotros */
+    .about-us-logo{
+        grid-column: 1/4;
+        grid-row: 1/3;
+        align-self: center;
+    }
+
+    .about-us-img-container {
+        height: 90%;
+        align-self: center;
+    }
+
+    .about-us p {
+        font-size: 1.1rem;
+    }
+
+    .about-us-img-container {
+        height: 80%;
+    }
+
+    /* Pantalla Partners */
+    .partners p{
+        font-size: 1.1rem;
+    }
+    .partners-footer-logo {
+        grid-column: 8/10;
+    }
+
+    /* Pantalla Servicios */
+    .services-logo {
+        grid-column: 1/4;
+        grid-row: 2/4;
+        align-self: start;
+    }
+
+    .services p{
+        grid-column: 2/11;
+    }
+
+    .services-img-left {
+        grid-column: 2/11;
+        grid-row: 7/11;
+        height: 90%;
+        width: 90%;
+        align-self: center;
+        justify-self: end;
+    }
+
+    .services-bar {
+        grid-column: 1/2;
+        justify-self: start;
+    }
+
+    /* Pantalla Contacto */
+    .contact .nav-rs {
+        grid-column: 2/10   ;
+        padding: 0 10%;
+        margin: 0;
+    }
 }
